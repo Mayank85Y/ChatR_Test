@@ -8,7 +8,7 @@ prompt = "when and why to use traceback() function in R?"
 response = ollama.chat(model=model_name, messages=[{"role": "user", "content": prompt}])
 
 # Save the output to a file
-with open("output.txt", "w", encoding="utf-8") as f:
+with open("output.txt", "w", encoding="utf-8") as f: 
     f.write(response["message"]["content"])
 
 print("Response saved to output.txt")
